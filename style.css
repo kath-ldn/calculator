@@ -1,0 +1,231 @@
+/* to rationalise; can reduce down ids and classs */
+body {
+    background-color: whitesmoke;
+    margin: 0px;
+}
+
+
+#topNav{
+    background-color: #19180A;
+    overflow: hidden;
+    width: 100%;
+    padding-bottom: 10px;
+  }
+
+h1 {
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+    color: #F6EFEE;
+    font-size: 60px;
+}
+
+.topNavLinks {
+    display: flex;
+    justify-content: space-around;
+}
+
+.headerButton {
+    background: transparent;
+    border: none;
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+    color: #F6EFEE;
+    font-size: 20px;
+
+}
+
+#container {
+    margin: auto;
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 2fr 1fr 1fr 1fr 1fr 1fr;;
+    grid-template-areas:
+    "screen screen screen screen"
+    "one two three plus"
+    "four five six minus"
+    "seven eight nine times"
+    "equals decimal zero divide"
+    "reset reset reset back";
+    grid-gap: 10px;
+    font-size: 30px;
+    height: 50%;
+    width: 30%;
+    background: #AF5E68;
+    border: 1px solid #19180A;
+    padding-top: 1%;
+    padding-bottom: 1.5%;
+    padding-left: 0.5%;
+    padding-right: 0.5%;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    align-content: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#screen {
+    background: #F1E4F3;
+    grid-area: screen;
+    border: 1px solid black;
+    height: 100%;
+    width: 95%;
+    justify-self: center;
+    text-align: right;
+    align-content: end;
+    justify-content: end;
+    font-family: 'Orbitron', sans-serif;
+    color: #26AEBA;
+    font-size: 22px;
+    padding-right: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+.numberButton {
+    background: #Ef767A;
+    color: #F1E4F3;
+    border: 1px solid black;
+    justify-self: center;
+    height: 100%;
+    width: 83%;
+    font-size: 30px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.numberButton:hover {
+    background-color: #78DAE3;
+    cursor: pointer;
+}
+
+#buttonOne {
+    grid-area: one;
+}
+
+#buttonTwo {
+    grid-area: two;
+}
+
+#buttonThree {
+    grid-area: three;
+}
+
+#buttonFour {
+    grid-area: four;
+}
+
+#buttonFive {
+    grid-area: five;
+}
+
+#buttonSix {
+    grid-area: six;
+}
+
+#buttonSeven {
+    grid-area: seven;
+}
+
+#buttonEight {
+    grid-area: eight;
+    }
+
+#buttonNine {
+        grid-area: nine;
+    }
+
+#buttonZero {
+    grid-area: zero;
+    }
+
+.operator {
+    background: #F4A4A6;
+    border: 1px solid black;
+    color: #F1E4F3;
+    height: 100%;
+    width: 83%;
+    justify-self: center;
+    font-size: 30px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.operator:hover {
+    background: #78DAE3;
+    cursor: pointer; 
+}
+
+#plus {
+    grid-area: plus;
+}
+
+#minus {
+    grid-area: minus;
+}
+
+#times {
+    grid-area: times;
+}
+
+#divide {
+        grid-area: divide;
+    }
+
+#equals {
+    grid-area: equals;
+    width: 100%;
+}
+
+.equalsButton {
+    background: #EB5C60;
+    border: 1px solid black;
+    color: #F1E4F3;
+    height: 100%;
+    width: 83%;
+    justify-self: center;
+    font-size: 30px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.equalsButton:hover {
+    background: #78DAE3;
+    cursor: pointer;
+}
+
+#decimal {
+    grid-area: decimal;
+    width: 100%;
+}
+
+.resetButton {
+        background: #EB5C60;
+        border: 1px solid black;
+        justify-self: center;
+        color: #F1E4F3;
+        font-size: 30px;
+        width: 95%;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.resetButton:hover {
+    background: #78DAE3;
+    cursor: pointer;
+}
+
+#reset {
+    grid-area: reset;
+}
+
+.backButton {
+    background: #EB5C60;
+    border: 1px solid black;
+    justify-self: center;
+    color: #F1E4F3;
+    font-size: 30px;
+    width: 83%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#back {
+    grid-area: back;
+}
+
+
