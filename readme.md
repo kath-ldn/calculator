@@ -50,7 +50,7 @@ None planned.
 
 ### Known Issues
 
-None - if you spot one, let me know!
+- Mobile (specifically on my iPhone 11) the colors fade substantially - to fix.
 
 ## Acknowledgements
 
