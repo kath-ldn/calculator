@@ -1,5 +1,9 @@
 @import url(./reset.css);
 
+/*prevents mobile rounding of inputs*/
+input{
+    border-radius: 0;
+}
 
 /* to rationalise; can reduce down ids and classs */
 body {
@@ -179,11 +183,14 @@ header{
    }
 
    .number-button, .operator, .control-button{
-        font-size: 0.5em;
-        border-radius: 1%;
+        font-size: 100%;
         display: flex;
         align-items: center;
         justify-content: center;
+    }
+
+    .number-button:hover, .operator:hover, .control-button:hover{
+        opacity: 100%;
     }
 
     .number-button, .operator{
