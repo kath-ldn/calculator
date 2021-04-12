@@ -1,7 +1,7 @@
 @import url(./reset.css);
 
 /*prevents mobile rounding of inputs*/
-input{
+button, input{
     border-radius: 0;
     -webkit-appearance: none;
     -moz-appearance: none;
