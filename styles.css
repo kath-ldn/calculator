@@ -1,0 +1,199 @@
+@import url(./reset.css);
+
+
+/* to rationalise; can reduce down ids and classs */
+body {
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+header{
+    width: 386px;
+    background-color: #585858;
+    padding: 0 0 10px 0;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    margin-top: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-top: 5%;
+    height: 60px;
+}
+
+.color-scheme-div{
+    align-self: flex-end;
+    padding: 5px 5px 0 0;
+}
+
+#turn-pink{
+    background-color: #EB5C60;
+}
+
+#turn-blue{
+    background-color: #26AEBA;
+}
+
+#turn-green{
+    background-color: #5DBC61;
+}
+
+.color-button{
+    border: none;
+    width: 25px;
+    height: 25px;
+    border: 1px solid #19180A;
+}
+
+.color-button:hover{
+    cursor: pointer;
+}
+
+.color-button:focus{
+    text-decoration: none;
+    border: none;
+    opacity: 50%;    
+}
+
+#calc-container {
+    box-sizing: border-box;
+    font-size: 20px;
+    height: 415px;
+    width: 385px;
+    background: #e2e2e2;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+#screen{
+    background-color: white;
+    font-family: 'Orbitron', sans-serif;
+    color: #26ba75;
+    font-size: 22px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 340px;
+    height: 70px;
+    margin: 20px 10px 5px 10px;
+    border-radius: 4px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+#screen:hover{
+    cursor: text;
+}
+
+#screen-text{
+    margin: 0 10px 10px 0;
+}
+
+.number-button, .operator, .control-button{
+    border: none;
+    color: #2c2c2c;
+    font-size: 30px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 4px;
+}
+
+.number-button, .operator{
+    width: 60px;
+    height: 55px;
+    margin: 5px;    
+}
+
+.number-button:hover, .operator:hover, .control-button:hover{
+    cursor: pointer;
+    transition: ease-in 0.1s;
+    opacity: 75%;
+}
+
+.number-button {
+    background: #fcb457;
+}
+
+.operator {
+    background: #22d8e6;
+}
+
+.operator:hover, .number-button:hover {
+    width: 62px;
+    height: 57px;
+    margin: 4px;
+}
+
+.control-button {
+    background: #2bc26a;
+    color: rgb(245, 245, 245);
+}
+
+#equals {
+    width: 130px;
+    height: 55px;
+    margin: 5px;
+}
+
+#equals:hover{
+    width: 132px;
+    height: 57px;
+    margin: 4px;
+}
+
+#reset, #back {
+    width: 95px;
+    height: 55px;
+    margin: 5px;
+}
+
+#reset:hover, #back:hover {
+    width: 97px;
+    height: 57px;
+    margin: 4px;
+}
+
+@media(max-width: 400px){
+   header{
+       width: 90.5vw;
+       min-width: 264px;
+   }
+
+   #calc-container{
+       width: 90vw;
+       font-size: 1em;
+       min-width: 264px;
+       height: 90vw;
+       min-height: 270px;
+   }
+
+   #screen{
+        width: 90%;
+        font-size: 1em;
+        margin: 5%;
+   }
+
+   .number-button, .operator, .control-button{
+    font-size: 1em;
+    }
+
+    .number-button, .operator{
+        width: 15.5%;
+        height: 12%; 
+    }
+
+    #equals{
+        width: 34%;
+        height: 12%;
+    }
+
+    #reset, #back{
+        width: 25%;
+        height: 12%;
+    }
+}

@@ -1,88 +1,47 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>cute calculator</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap" rel="stylesheet">
+    <meta charset="utf-8">
+    <link rel="shortcut icon" type="image/png" href="./assets/calc2.png"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
 </head>
 <body>
     <header>
-        <div id="topNav">
-        <h1>
-            I'm a calculator!
-        </h1>
-        <div class="topNavLinks">
-        <input type="button" id="turnPink" class="headerButton" value="Turn me pink">
-        <input type="button" id="turnBlue" class="headerButton" value="Turn me blue">
-        <input type="button" id="turnGreen" class="headerButton" value="Turn me green">
-        <input type="button" id="CATS" class="headerButton" value="CATS">
+        <div class="color-scheme-div">
+            <input type="button" id="turn-default" class="color-button">
+            <input type="button" id="turn-pink" class="color-button">
+            <input type="button" id="turn-blue" class="color-button">
+            <input type="button" id="turn-green" class="color-button"> 
         </div>
-    </div>   
     </header>
-<div id="container">
-    <div id = "screen">
-       <p><span id= "screenText">123456</span></p>
-    </div>
 
-    <div id="buttonOne">
-    <form> <input type="button" id="numberOne" class="numberButton" value="1"></form>
+    <!--ADD ALL OF BELOW DYNAMICALLY AFTER HAVE EDITED STYLES-->
+    <div id="calc-container">
+        <div id="screen">
+            <p id= "screen-text"></p>
+        </div>
+        <input type="button" id="dig1" class="number-button" value="1">
+        <input type="button" id="dig2" class="number-button" value="2">
+        <input type="button" id="dig3" class="number-button" value="3">
+        <input type="button" id="plus" class="operator" value="+">
+        <input type="button" id="minus" class="operator" value="-">
+        <input type="button" id="dig4" class="number-button" value="4">
+        <input type="button" id="dig5" class="number-button" value="5">
+        <input type="button" id="dig6" class="number-button" value="6">
+        <input type="button" id="times" class="operator" value="x">
+        <input type="button" id="divide" class="operator" value="÷">
+        <input type="button" id="dig7" class="number-button" value="7">
+        <input type="button" id="dig8" class="number-button" value="8">
+        <input type="button" id="dig9" class="number-button" value="9">
+        <input type="button" id="equals" class="control-button" value="=">
+        <input type="button" id="dig0" class="number-button" value="0">
+        <input type="button" id="decimal" class="number-button" value="."> 
+        <input type="button" id="reset" value="Reset" class="control-button">
+        <input type="button" id="back" value="←" class="control-button">
     </div>
-    <div id="buttonTwo">
-   <form> <input type="button" id="numberTwo" class="numberButton" value="2"></form>
-    </div>
-   <div id="buttonThree">
-   <form> <input type="button" id="numberThree" class="numberButton" value="3"></form>
-    </div>
-   <div id="buttonFour">
-   <form> <input type="button" id="numberFour" class="numberButton" value="4"></form>
-    </div>
-   <div id="buttonFive">
-   <form> <input type="button" id="numberFive" class="numberButton" value="5"></form>
-    </div>
-   <div id="buttonSix">
-   <form> <input type="button" id="numberSix" class="numberButton" value="6"></form>
-    </div>
-   <div id="buttonSeven">
-   <form> <input type="button" id="numberSeven" class="numberButton" value="7"></form>
-    </div>
-   <div id="buttonEight">
-   <form> <input type="button" id="numberEight" class="numberButton" value="8"></form>
-    </div>
-   <div id="buttonNine">
-   <form> <input type="button" id="numberNine" class="numberButton" value="9"></form>
-    </div>
-   <div id="buttonZero">
-   <form> <input type="button" id="numberZero" class="numberButton" value="0"></form>
-    </div>
-
-   <div id="plus"> 
-       <form> <input type="button" id = "opPlus" class="operator" value="+"> </form>
-    </div>
-    
-    <div id="minus">
-   <form> <input type="button" id ="opMinus" class="operator" value="-"> </form>
-   </div>
-   <div id="times">
-   <form> <input type="button" id="opTimes" class="operator" value="x"> </form>
-   </div>
-   <div id="divide">
-   <form> <input type="button" id="opDivide" class="operator" value="÷"> </form>
-   </div>
-   <div id="equals">
-   <form> <input type="button" id="opEquals" class="equalsButton" value="="> </form>
-    </div>
-    <div id="decimal">
-        <form> <input type="button" id="decimalPoint" class="numberButton" value="."> </form>
-         </div>
-   <div id="reset">
-       <form> <input type="button" id="opReset" value="Reset" class="resetButton"> </form>
-    </div>
-    <div id="back">
-        <form> <input type="button" id="opBack" value="←" class="backButton"> </form>
-     </div>
-</div>
 
 <script src="script.js"></script>
 </body>
