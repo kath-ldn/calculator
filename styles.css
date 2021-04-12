@@ -3,6 +3,9 @@
 /*prevents mobile rounding of inputs*/
 input{
     border-radius: 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
 }
 
 /* to rationalise; can reduce down ids and classs */
