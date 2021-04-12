@@ -210,4 +210,23 @@ header{
         width: 25%;
         height: 12%;
     }
+
+    .number-button:hover, .operator:hover{
+        width: 15.5%;
+        height: 12%; 
+        margin: 5px;    
+    }
+    
+    #equals:hover{
+        width: 34%;
+        height: 12%;
+        margin: 5px;
+    }
+    
+    #reset:hover, #back:hover {
+        width: 25%;
+        height: 12%;
+        margin: 5px;
+    }
+    
 }
